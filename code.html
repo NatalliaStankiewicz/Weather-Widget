@@ -1,0 +1,14 @@
+<template>
+   <lightning-card title="Weather Widget" icon-name="standard:default">
+        <lightning-input  class="slds-m-around_medium" label="Enter City name" type="search" placeholder="Bishkek" required onchange={handleChange}></lightning-input>
+        
+        
+        <lightning-button variant="success" label="Search" onclick={handleClick} class="slds-m-left_x-small slds-m-around_medium"></lightning-button>
+        <div if:true={show}>
+            <p>Temperature is: <strong>{temperature}</strong></p>
+            <p>Description is: <strong>{description}</strong></p>
+            <p>{icon}</p>
+
+        </div>
+    </lightning-card>
+</template>
