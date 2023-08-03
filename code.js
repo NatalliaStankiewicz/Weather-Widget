@@ -21,3 +21,4 @@ export default class ShowWeather extends LightningElement {
         })
         .catch(error => console.log(error))
     }
+}
